@@ -1,8 +1,8 @@
 #pragma once
 #include "define.h"
-namespace TCP_PROXY_USE_UDP
+namespace TCP_TUNNEL
 {
-    union PacketParameter
+    union PacketParameter_t
     {
 
     };
@@ -10,9 +10,11 @@ namespace TCP_PROXY_USE_UDP
     struct UdpPacket_t
     {
         unsigned int version;
+        int ip;
+        unsigned short port;
+        PacketParameter_t parameter;
         PacketType type;
         unsigned int data_size;
-        PacketParameter parameter;
         char data[1];
     };
 }

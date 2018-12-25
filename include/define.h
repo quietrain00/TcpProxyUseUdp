@@ -1,5 +1,5 @@
 #pragma once
-namespace TCP_PROXY_USE_UDP
+namespace TCP_TUNNEL
 {
     enum PacketType{LOGIN_PACKET, CREATE_LINK_PACKET, MESSAGE_PACKET, CLOSE_LINK_PACKET, LOGOUT_PACKET, };
 }
